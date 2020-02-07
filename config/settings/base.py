@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open(os.path.join(BASE_DIR, 'etc/secret_key.txt')) as f:
+with open(os.path.join(BASE_DIR, 'env/etc/secret.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -172,12 +172,7 @@ MESSAGE_TAGS = {constants.ERROR: 'danger'}
 # Sending Email
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
-
 EMAIL_PORT = 587
-
-
-
-
 
 # django-cors-headers
 CORS_ORIGIN_WHITELIST = (

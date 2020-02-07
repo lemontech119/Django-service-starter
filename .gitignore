@@ -3,10 +3,12 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 ## Python compiled byte code
+__pycache__
 *.pyc
 
 ## IDE Config
 .idea
+.vscode/
 
 ## IPython Notebook
 .ipynb_checkpoints/
@@ -20,10 +22,8 @@
 ## log
 *.log
 
-## secret
-dev_db.txt
-email.txt
-secret_key.txt
+# ## secret
+# env/etc/
 
 ## media files
 media/
@@ -38,18 +38,5 @@ config/fixtures/test/*
 ## Schema graph
 schema/
 
-## vscode
-.vscode/
-
-## practice
-practice/
-note/
-
 ## virtual env
 django_py36
-
-## migrations for github
-migrations/
-
-## pytest
-.pytest*
