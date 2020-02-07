@@ -1,11 +1,11 @@
-# Django-sercvice-starterv 
+# Django-sercvice-starter 
 - EB(Elastic beanstalk)
 - S3
 - Django(Django REST freamework, Abstract User, pytest)
 - PostgreSQL
 - JWT Authentication
 
-#Configurations
+# Configurations
 ### Common
 awsebcli
 boto3
